@@ -27,7 +27,3 @@ if st.button("Analyze"):
         st.markdown(html, unsafe_allow_html=True)
     else:
         st.warning("Please upload a valid CSV file.")
-
-# Requirements for Heroku deployment
-if __name__ == "__main__":
-    main()
