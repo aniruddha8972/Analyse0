@@ -1,3 +1,11 @@
+import pip
+
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
+pip.main(['install'] + requirements)
+
+
 import streamlit as st
 import ydata_profiling as ydp
 import pandas as pd
